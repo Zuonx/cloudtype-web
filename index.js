@@ -6,4 +6,4 @@ app.listen(8080, function() {
     console.log('server start on 8080')
 });
 
-app.get('/', function(req, res) { res.send("안녕하세요!!!") });
+app.get('/', function(req, res) { res.send("권쌤의 암산짱!") });
