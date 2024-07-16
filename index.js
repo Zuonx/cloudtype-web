@@ -1,13 +1,16 @@
-const express = require('express')
+const express = require('express');
+const path = require('path');
 
 const app = express();
 
 app.listen(8080, function () {
-    console.log('server start on 8080')
+    console.log('server start on 8080');
 });
 
+app.get('/', function (req, res) { 
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
-app.get('/', function (req, res) { res.send("Jueon gil!!!!!") });
 
 
 
